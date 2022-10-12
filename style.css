@@ -1,5 +1,14 @@
-* {
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
+    margin-bottom: 80px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -21,6 +30,7 @@ nav img {
 .contenedor1 {
     background-size: 100% 100%;
     background-image: url(./Trabintegradorimagenes/ba1.jpg);
+    height: auto;
     object-fit: fill;
 }
 
@@ -84,19 +94,127 @@ font-size: xx-large;
     width: 50%;
     background-color: black;
     color: white;
+    padding-top: 1%;
     padding-left: 2%;
-    padding-right: 10%;
+    padding-right: 1%;
 }
+
 
 .orador {
     text-align: center;
     font-weight: bold;
 }
 
+#anotate {
+    text-align: center;
+}
 
-@media (max-widht:700px) {
+#ignite {
+    text-decoration: underline;
+
+}
+
+form {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+input {
+    height: 40px;
+}
+
+input, textarea {
+    width: 500px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-color: black;
+    
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 1000px;
+    width: 1000px;
+    margin-bottom: 2px;
+
+}
+
+#boton {
+    width: 1000px;
+    height: 60px;
+    background-color: rgb(118, 226, 118);
+    color: black;
+    padding: 20px;
+    border-style: none;
+    font-size: 20px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    margin: auto;
+    left: 0;
+    height: 80px;
+    padding: 2%  8%;
+    background-color:rgb(8, 8, 45) ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.footer-menu-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap: nowrap;
+    margin-bottom: 2px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.menu-items {
+    cursor:pointer;
+    margin: 2%  5%;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.footer-menu-container a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+@media (max-widht:480px) {
     .contenedor1{
         flex-direction: column;
     }
+     form{
+        flex-direction: column;
+        
+    }
       
 }
+
+
+   
