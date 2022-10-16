@@ -161,24 +161,24 @@ textarea {
     cursor: pointer;
 }
 
-.nav-footer {
+.nav {
     width: 100%;
     justify-content: center;
     background-color: rgb(11, 11, 39);
+    align-items: center;
     
   }
 
-  .nav a {
+.nav a {
     color: white;
-    padding-top: 20px;
-    padding-right: 120px;
+    padding-top: 1%;
+    padding-right: 5%;
     justify-content: center;
 
   }
 
 #PregFrec {
     padding-top: 5px;
-    padding-left: 10%;
 
 }
 
